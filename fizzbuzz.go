@@ -32,7 +32,6 @@ func generate(out chan<- int, n int) {
 
 func filter(in <-chan int, out chan<- string) {
 	for i := range in {
-
 		switch {
 		case i%15 == 0:
 			out <- "FizzBuzz"
